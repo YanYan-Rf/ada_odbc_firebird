@@ -1,0 +1,119 @@
+V "GNAT Lib v16"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		840568c6 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W odbc%s		odbc.adb		odbc.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20260430083320 76789da1 ada%s
+D a-except.ads		20260430083320 8699d7ff ada.exceptions%s
+D a-ioexce.ads		20260430083320 40018c65 ada.io_exceptions%s
+D a-stream.ads		20260430083320 cb01a8f8 ada.streams%s
+D a-string.ads		20260430083320 90ac6797 ada.strings%s
+D a-sttebu.ads		20260430083320 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260430083320 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260430083320 2dbf449c ada.tags%s
+D a-textio.ads		20260430083320 34ef47de ada.text_io%s
+D a-unccon.ads		20260430083320 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260430083320 9111f9c1 interfaces%s
+D i-c.ads		20260430083320 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260430083320 49eced87 interfaces.c.strings%s
+D i-cstrea.ads		20260430083320 ffd01b9d interfaces.c_streams%s
+D main.adb		20261005102708 c79d4ef7 main%b
+D odbc.ads		20261005102116 63df6070 odbc%s
+D system.ads		20260430083320 898beeee system%s
+D s-crtl.ads		20260430083320 823b6536 system.crtl%s
+D s-exctab.ads		20260430083320 91bef6ef system.exception_table%s
+D s-ficobl.ads		20260430083320 dc5161d4 system.file_control_block%s
+D s-parame.ads		20260430083320 a1aeab5c system.parameters%s
+D s-putima.ads		20260430083320 1b989439 system.put_images%s
+D s-secsta.ads		20260430083320 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260430083320 5d88fdea system.soft_links%s
+D s-stache.ads		20260430083320 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260430083320 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260430083320 ccded4e8 system.storage_elements%s
+D s-traent.ads		20260430083320 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260430083320 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20260430083320 d9032363 system.wch_con%s
+G a e
+G c Z b b [main standard 7 11 none]
+G r c none [main standard 7 11 none] [initialize odbc 282 14 none]
+G r c none [main standard 7 11 none] [connect odbc 284 14 none]
+G r c none [main standard 7 11 none] [exec odbc 289 14 none]
+G r c none [main standard 7 11 none] [prepare odbc 292 14 none]
+G r c none [main standard 7 11 none] [bind_integer_address odbc 295 14 none]
+G r c none [main standard 7 11 none] [bind_string_address odbc 300 14 none]
+G r c none [main standard 7 11 none] [execute odbc 307 14 none]
+G r c none [main standard 7 11 none] [commit odbc 314 14 none]
+G r c none [main standard 7 11 none] [disconnect odbc 287 14 none]
+G r c none [main standard 7 11 none] [rollback odbc 316 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 15|1r6 2r6 9r8 215r10
+X 2 a-except.ads
+44K13*Exceptions 309e19 15|2w10 215r14
+94V13*Exception_Information{string} 15|215s25
+X 9 a-textio.ads
+58K13*Text_IO 785e16 15|1w10 9r12
+284U14*New_Line 15|57s4 74s4 89s4 125s4 173s4 188s4
+565U14*Put_Line 15|48s4 51s4 54s4 64s4 76s4 91s4 117s4 127s4 165s4 175s4
+. 180s4 190s4 193s4 196s4 211s7 212s7 214s7
+X 11 interfac.ads
+47K9*Interfaces 247e15 15|3r6 4r6 10r8 11r8
+X 12 i-c.ads
+33K20*C 605e17 15|3w17 4r17 10r19 11r19
+62I9*int<integer>
+66I9*long_long<long_long_integer>
+74M9*unsigned_long_long
+109E9*char<character>
+124A9*char_array(109E9)<92M9> 15|33r19
+146V13*To_C{124A9} 15|34s6
+X 13 i-cstrin.ads
+48K22*Strings 183e25 15|4w19 11r21
+X 15 main.adb
+7U11*Main 7b11 253l5 253t9
+17a3 Connection_String{string} 80r7
+31i4 ID{16|15I12} 142m7 142r7
+33a4 Name{12|124A9} 40r19 152r7 153r20 154r21
+37i4 ID_Indicator{16|19I12} 143m7 143r7
+39i4 Name_Indicator{16|19I12} 155m7 155r7
+43b4 Connected{boolean} 82m4 222r10
+209r9 E{2|53R9} 215r48
+X 16 odbc.ads
+4K9*ODBC 15|5w6 31r17 37r27 39r29 40r6 67r4 79r4 100r7 111r4 131r4 140r4
+. 150r4 153r7 154r7 162r4 178r4 204r4 226r13 244r10 16|322e9
+15I12*SQLINTEGER{12|62I9} 15|31r22
+19I12*SQLLEN{12|66I9} 15|37r32 39r34 40r11 153r12
+20M12*SQLULEN{12|74M9} 15|154r12
+282U14*Initialize 15|67s9
+284U14*Connect 15|79s9
+287U14*Disconnect 15|204s9 244s15
+289U14*Exec 15|100s12 111s9
+292U14*Prepare 15|131s9
+295U14*Bind_Integer_Address 15|140s9
+300U14*Bind_String_Address 15|150s9
+307U14*Execute 15|162s9
+314U14*Commit 15|178s9
+316U14*Rollback 15|226s18
+

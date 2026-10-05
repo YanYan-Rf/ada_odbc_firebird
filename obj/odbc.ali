@@ -1,0 +1,312 @@
+V "GNAT Lib v16"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U odbc%b		odbc.adb		1a478ca7 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.strings%s  i-cstrin.adb		i-cstrin.ali
+W system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U odbc%s		odbc.ads		3189b579 EE NE OO PK IU
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20260430083320 76789da1 ada%s
+D a-except.ads		20260430083320 8699d7ff ada.exceptions%s
+D a-ioexce.ads		20260430083320 40018c65 ada.io_exceptions%s
+D a-stream.ads		20260430083320 cb01a8f8 ada.streams%s
+D a-string.ads		20260430083320 90ac6797 ada.strings%s
+D a-sttebu.ads		20260430083320 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20260430083320 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20260430083320 2dbf449c ada.tags%s
+D a-textio.ads		20260430083320 34ef47de ada.text_io%s
+D a-unccon.ads		20260430083320 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20260430083320 9111f9c1 interfaces%s
+D i-c.ads		20260430083320 dbdd3be7 interfaces.c%s
+D i-cstrin.ads		20260430083320 49eced87 interfaces.c.strings%s
+D i-cstrea.ads		20260430083320 ffd01b9d interfaces.c_streams%s
+D odbc.ads		20261005102116 63df6070 odbc%s
+D odbc.adb		20261005102130 56cd9387 odbc%b
+D system.ads		20260430083320 898beeee system%s
+D s-conca2.ads		20260430083320 b5fb73f7 system.concat_2%s
+D s-crtl.ads		20260430083320 823b6536 system.crtl%s
+D s-exctab.ads		20260430083320 91bef6ef system.exception_table%s
+D s-ficobl.ads		20260430083320 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20260430083320 11a376a2 system.image_i%s
+D s-imgint.ads		20260430083320 86836590 system.img_int%s
+D s-parame.ads		20260430083320 a1aeab5c system.parameters%s
+D s-putima.ads		20260430083320 1b989439 system.put_images%s
+D s-secsta.ads		20260430083320 578279f5 system.secondary_stack%s
+D s-soflin.ads		20260430083320 5d88fdea system.soft_links%s
+D s-stache.ads		20260430083320 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20260430083320 1c9580f6 system.standard_library%s
+D s-stoele.ads		20260430083320 ccded4e8 system.storage_elements%s
+D s-traent.ads		20260430083320 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20260430083320 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20260430083320 d9032363 system.wch_con%s
+G a e
+G c Z s s [sqlallochandle odbc 97 13 none]
+G c Z s s [sqlsetenvattr odbc 110 13 none]
+G c Z s s [sqldriverconnecta odbc 124 13 none]
+G c Z s s [sqldisconnect odbc 142 13 none]
+G c Z s s [sqlfreehandle odbc 153 13 none]
+G c Z s s [sqlexecdirecta odbc 165 13 none]
+G c Z s s [sqlpreparea odbc 178 13 none]
+G c Z s s [sqlbindparameter odbc 191 13 none]
+G c Z s s [sqlexecute odbc 211 13 none]
+G c Z s s [sqlfetch odbc 222 13 none]
+G c Z s s [sqlgetdata odbc 233 13 none]
+G c Z s s [sqlgetdiagreca odbc 249 13 none]
+G c Z s s [sqlendtran odbc 267 13 none]
+G c Z s b [initialize odbc 282 14 none]
+G c Z s b [connect odbc 284 14 none]
+G c Z s b [disconnect odbc 287 14 none]
+G c Z s b [exec odbc 289 14 none]
+G c Z s b [prepare odbc 292 14 none]
+G c Z s b [bind_integer_address odbc 295 14 none]
+G c Z s b [bind_string_address odbc 300 14 none]
+G c Z s b [execute odbc 307 14 none]
+G c Z s b [fetch odbc 309 14 none]
+G c Z s b [get_string odbc 311 13 none]
+G c Z s b [commit odbc 314 14 none]
+G c Z s b [rollback odbc 316 14 none]
+G c Z s b [print_diagnostics odbc 318 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 16|4r6 10r8
+X 9 a-textio.ads
+58K13*Text_IO 785e16 16|4w10 10r12
+565U14*Put_Line 16|65s10 69s10 73s10 102s10 132s10 145s7 182s10 216s10 220s10
+. 234s10 244s7 353s13 384s10 443s10 468s10 516s10 566s10 601s10 638s10 687s10
+. 738s10 779s10
+X 11 interfac.ads
+47K9*Interfaces 247e15 15|2r6 6r8 12r28 13r28 15r28 19r23 20r23 16|2r6 3r6
+. 8r8 9r8
+X 12 i-c.ads
+33K20*C 605e17 15|2w17 6r19 12r39 13r39 15r39 19r34 20r34 16|2w17 3r17 8r19
+. 9r19
+62I9*int<integer> 15|15r41
+63I9*short<short_integer> 15|12r41
+66I9*long_long<long_long_integer> 15|19r36
+72M9*unsigned_short 15|13r41
+74M9*unsigned_long_long 15|20r36
+92M9*size_t 16|669r14 706r15
+109E9*char<character>
+111e4*nul{109E9} 16|30r20 33r20 162r20 663r20
+124A9*char_array(109E9)<92M9> 16|29r23 32r25 158r24 161r23 332r23 408r23
+. 662r24
+146V13*To_C{124A9} 16|159s9 333s9 409s9
+164V13*To_Ada{string} 16|67s13 75s13 709s9
+X 13 i-cstrin.ads
+48K22*Strings 183e25 16|3w19 9r21
+X 15 odbc.ads
+4K9*ODBC 322l5 322e9 16|6b14 791l5 791t9
+12I12*SQLSMALLINT{12|63I9} 22r25 48r31 49r31 50r31 70r26 71r26 77r27 78r27
+. 84r31 98r23 128r27 130r27 131r34 154r21 194r26 195r26 196r26 198r26 236r26
+. 250r23 252r23 256r23 257r30 268r21 319r21 16|25r21 37r29 39r23 55r15 164r28
+. 205r12 207r12
+13M12*SQLUSMALLINT{12|72M9} 64r35 90r28 91r28 132r27 193r26 235r26 270r21
+. 16|501r12 551r12 676r12
+15I12*SQLINTEGER{12|62I9} 56r37 58r28 112r28 114r28 168r26 181r26 254r30
+. 16|35r30 71r13 377r12 461r12
+19I12*SQLLEN{12|66I9} 200r26 238r27 303r27 16|508r12 539r27 665r24 679r12
+20M12*SQLULEN{12|74M9} 197r26 304r27 16|540r27
+22I12*SQLRETURN{12I12} 38r37 39r37 40r37 41r37 42r37 101r14 115r14 133r14
+. 144r14 156r14 169r14 182r14 202r14 213r14 224r14 240r14 258r14 271r14 16|41r16
+. 90r16 104r13 134r13 166r16 184r13 218r13 255r16 335r16 355r16 386r13 411r16
+. 445r13 470r13 494r16 518r13 544r16 568r13 588r16 603r13 623r16 640r13 667r16
+. 689r13 723r16 740r13 760r16 781r13
+28M12*SQLHANDLE{17|67M9} 30r24 31r24 32r24 99r23 100r30 155r21 251r23 269r21
+. 320r21 16|26r21
+30M12*SQLHENV{28M12} 111r28 16|16r26
+31M12*SQLHDBC{28M12} 125r27 143r27 16|17r26
+32M12*SQLHSTMT{28M12} 166r26 179r26 192r26 212r26 223r26 234r26 16|18r26
+38i4*SQL_SUCCESS{22I12} 16|61r22 100r20 130r20 180r20 211r20 351r23 379r20
+. 441r20 463r20 511r20 561r20 596r20 631r20 682r20 733r20 774r20
+39i4*SQL_SUCCESS_WITH_INFO{22I12} 16|63r22 213r22 232r19 381r22 465r22 513r22
+. 563r22 598r22 633r22 684r22 735r22 776r22
+40i4*SQL_ERROR{22I12}
+41i4*SQL_INVALID_HANDLE{22I12}
+42i4*SQL_NO_DATA{22I12} 16|58r29 635r22
+48i4*SQL_HANDLE_ENV{12I12} 16|96r12 137r13 187r13 314r15
+49i4*SQL_HANDLE_DBC{12I12} 16|176r12 223r13 238r13 298r15 358r16 729r12 743r13
+. 770r12 784r13
+50i4*SQL_HANDLE_STMT{12I12} 16|267r15 347r15 389r13 423r15 437r12 473r13
+. 521r13 571r13 606r13 643r13 692r13
+56i4*SQL_ATTR_ODBC_VERSION{15I12} 16|126r12
+58i4*SQL_OV_ODBC3{15I12} 16|127r31
+64m4*SQL_DRIVER_NOPROMPT{13M12} 16|209r12
+70i4*SQL_C_CHAR{12I12} 16|553r12 677r12
+71i4*SQL_C_LONG{12I12} 16|503r12
+77i4*SQL_INTEGER{12I12} 16|504r12
+78i4*SQL_VARCHAR{12I12} 16|554r12
+84i4*SQL_PARAM_INPUT{12I12} 16|502r12 552r12
+90m4*SQL_COMMIT{13M12} 16|731r12
+91m4*SQL_ROLLBACK{13M12} 16|772r12
+97V13*SQLAllocHandle{22I12} 98>7 99>7 100^7 105b7 16|95s9 175s9 346s12 436s9
+98i7 Handle_Type{12I12}
+99m7 Input_Handle{28M12}
+100p7 Output_Handle(28M12)
+110V13*SQLSetEnvAttr{22I12} 111>7 112>7 113>7 114>7 119b7 16|124s9
+111m7 Environment_Handle{30M12}
+112i7 Attribute{15I12}
+113m7 Value{17|67M9}
+114i7 String_Length{15I12}
+124V13*SQLDriverConnectA{22I12} 125>7 126>7 127>7 128>7 129>7 130>7 131^7
+. 132>7 137b7 16|201s9
+125m7 Connection_Handle{31M12}
+126m7 Window_Handle{17|67M9}
+127m7 In_Connection{17|67M9}
+128i7 String_Length_1{12I12}
+129m7 Out_Connection{17|67M9}
+130i7 Buffer_Length{12I12}
+131p7 String_Length_2(12I12)
+132m7 Driver_Completion{13M12}
+142V13*SQLDisconnect{22I12} 143>7 148b7 16|282s12
+143m7 Connection_Handle{31M12}
+153V13*SQLFreeHandle{22I12} 154>7 155>7 160b7 16|266s12 297s12 313s12 422s12
+154i7 Handle_Type{12I12}
+155m7 Handle{28M12}
+165V13*SQLExecDirectA{22I12} 166>7 167>7 168>7 173b7 16|374s9
+166m7 Statement_Handle{32M12}
+167m7 Statement_Text{17|67M9}
+168i7 Text_Length{15I12}
+178V13*SQLPrepareA{22I12} 179>7 180>7 181>7 186b7 16|458s9
+179m7 Statement_Handle{32M12}
+180m7 Statement_Text{17|67M9}
+181i7 Text_Length{15I12}
+191V13*SQLBindParameter{22I12} 192>7 193>7 194>7 195>7 196>7 197>7 198>7
+. 199>7 200>7 201>7 206b7 16|499s9 549s9
+192m7 Statement_Handle{32M12}
+193m7 Parameter_Number{13M12}
+194i7 Input_Output{12I12}
+195i7 Value_Type{12I12}
+196i7 Parameter_Type{12I12}
+197m7 Column_Size{20M12}
+198i7 Decimal_Digits{12I12}
+199m7 Parameter_Value{17|67M9}
+200i7 Buffer_Length{19I12}
+201m7 StrLen_Or_Ind{17|67M9}
+211V13*SQLExecute{22I12} 212>7 217b7 16|593s9
+212m7 Statement_Handle{32M12}
+222V13*SQLFetch{22I12} 223>7 228b7 16|628s9
+223m7 Statement_Handle{32M12}
+233V13*SQLGetData{22I12} 234>7 235>7 236>7 237>7 238>7 239>7 244b7 16|674s9
+234m7 Statement_Handle{32M12}
+235m7 Column_Number{13M12}
+236i7 Target_Type{12I12}
+237m7 Target_Value{17|67M9}
+238i7 Buffer_Length{19I12}
+239m7 StrLen_Or_Ind{17|67M9}
+249V13*SQLGetDiagRecA{22I12} 250>7 251>7 252>7 253>7 254^7 255>7 256>7 257^7
+. 262b7 16|48s12
+250i7 Handle_Type{12I12}
+251m7 Handle{28M12}
+252i7 Record_Number{12I12}
+253m7 SQL_State{17|67M9}
+254p7 Native_Error(15I12)
+255m7 Message_Text{17|67M9}
+256i7 Buffer_Length{12I12}
+257p7 Text_Length(12I12)
+267V13*SQLEndTran{22I12} 268>7 269>7 270>7 275b7 16|728s9 769s9
+268i7 Handle_Type{12I12}
+269m7 Handle{28M12}
+270m7 Completion{13M12}
+282U14*Initialize 16|88b14 147l8 147t18
+284U14*Connect 285>7 16|154b14 246l8 246t15
+285a7 Connection_String{string} 16|155b7 159r15
+287U14*Disconnect 16|253b14 321l8 321t18
+289U14*Exec 290>7 16|328b14 397l8 397t12
+290a7 SQL{string} 16|329b7 333r15
+292U14*Prepare 293>7 16|404b14 481l8 481t15
+293a7 SQL{string} 16|405b7 409r15
+295U14*Bind_Integer_Address 296>7 297>7 298>7 16|488b14 529l8 529t28
+296i7 Position{positive} 16|489b7 501r26
+297m7 Value_Address{17|67M9} 16|490b7 507r12
+298m7 Indicator_Address{17|67M9} 16|491b7 509r12
+300U14*Bind_String_Address 301>7 302>7 303>7 304>7 305>7 16|536b14 579l8
+. 579t27
+301i7 Position{positive} 16|537b7 551r26
+302m7 Value_Address{17|67M9} 16|538b7 557r12
+303i7 Buffer_Length{19I12} 16|539b7 558r12
+304m7 Column_Size{20M12} 16|540b7 555r12
+305m7 Indicator_Address{17|67M9} 16|541b7 559r12
+307U14*Execute 16|586b14 614l8 614t15
+309U14*Fetch 16|621b14 651l8 651t13
+311V13*Get_String{string} 312>7 16|658b13 714l8 714t18
+312i7 Column{positive} 16|659b7 676r26
+314U14*Commit 16|721b14 751l8 751t14
+316U14*Rollback 16|758b14 789l8 789t16
+318U14*Print_Diagnostics 319>7 320>7 16|24b14 81l8 81t25 136s10 186s10 222s10
+. 237s10 357s13 388s10 472s10 520s10 570s10 605s10 642s10 691s10 742s10 783s10
+319i7 Handle_Type{12I12} 16|25b7 49r15
+320m7 Handle{28M12} 16|26b7 50r15
+X 16 odbc.adb
+16m4 Environment{15|30M12} 98m12 98r12 125r12 138r13 177r12 188r13 310r26
+. 315r15 317m10
+17m4 Connection{15|31M12} 178m12 178r12 202r12 224r13 239r13 279r26 283r15
+. 285m10 294r26 299r15 301m10 348r15 359r16 438r12 730r12 744r13 764r22 771r12
+. 785r13
+18m4 Statement{15|32M12} 263r26 268r15 270m10 343r22 349m15 349r15 375r12
+. 390r13 419r26 424r15 426m10 439m12 439r12 459r12 474r13 500r12 522r13 550r12
+. 572r13 594r12 607r13 629r12 644r13 675r12 693r13
+29a7 State{12|124A9} 52m15 52r15 67r21
+32a7 Message{12|124A9} 54m15 54r15 55r28 75r21
+35i7 Native_Error{15|15I12} 53m15 53r15 71r31
+37i7 Text_Length{15|12I12} 56m15 56r15
+39i7 Record_Number{15|12I12} 51r15 77m10 77r27
+41i7 Result{15|22I12} 47m10 58r20 61r12 63r12
+90i7 Result{15|22I12} 94m7 100r10 104r30 123m7 130r10 134r30
+158a7 Conn_C{12|124A9} 204r12 205r25
+161a7 Out_C{12|124A9} 206m12 206r12 207r25
+164i7 Out_Length{15|12I12} 208m12 208r12
+166i7 Result{15|22I12} 174m7 180r10 184r30 200m7 211r10 213r12 218r30 232r10
+255i7 Result{15|22I12} 265m10 281m10 296m10 312m10
+332a7 SQL_C{12|124A9} 376r12 377r24
+335i7 Result{15|22I12} 345m10 351r13 355r33 373m7 379r10 381r12 386r30
+408a7 SQL_C{12|124A9} 460r12 461r24
+411i7 Result{15|22I12} 421m10 435m7 441r10 445r30 457m7 463r10 465r12 470r30
+494i7 Result{15|22I12} 498m7 511r10 513r12 518r30
+544i7 Result{15|22I12} 548m7 561r10 563r12 568r30
+588i7 Result{15|22I12} 592m7 596r10 598r12 603r30
+623i7 Result{15|22I12} 627m7 631r10 633r12 635r12 640r30
+662a7 Buffer{12|124A9} 678m12 678r12 679r20 710r12 711r15 712r15
+665i7 Length{15|19I12} 680m12 680r12 701r10 706r23
+667i7 Result{15|22I12} 673m7 682r10 684r12 689r30
+669m7 Last{12|92M9} 706m7 712r30
+723i7 Result{15|22I12} 727m7 733r10 735r12 740r30
+760i7 Result{15|22I12} 768m7 774r10 776r12 781r30
+X 17 system.ads
+37K9*System 15|1w6 28r25 113r28 126r27 127r27 129r27 167r26 180r26 199r26
+. 201r26 237r26 239r26 253r23 255r23 297r27 298r27 302r27 305r27 16|1w6 16r38
+. 17r38 18r38 97r12 127r12 203r12 263r14 263r37 270r23 279r14 279r38 285r24
+. 294r14 294r38 301r24 310r14 310r39 317r25 343r10 343r33 419r14 419r37 426r23
+. 490r27 491r27 538r27 541r27 764r10 764r34 17|214e11
+67M9*Address 15|28r32 113r35 126r34 127r34 129r34 167r33 180r33 199r33 201r33
+. 237r33 239r33 253r30 255r30 297r34 298r34 302r34 305r34 16|127r12 490r34
+. 491r34 538r34 541r34
+69m4*Null_Address{67M9} 16|16r45 17r45 18r45 97r19 203r19 263r44 270r30 279r45
+. 285r31 294r45 301r31 310r46 317r32 343r40 419r44 426r30 764r41
+81V14*"="{boolean} 16|263r20 263r22 279r20 279r22 294r20 294r22 310r20 310r22
+. 343r16 343r18 419r20 419r22 764r16 764r18
+
